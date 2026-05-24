@@ -9,6 +9,10 @@ esm/
 *.d.ts
 !src/**/*.d.ts
 
+# Next.js build artifacts
+packages/website/.next/
+.next/
+
 # Turbo
 .turbo/
 
