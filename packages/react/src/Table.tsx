@@ -19,6 +19,7 @@ export interface TableProps<T = Record<string, unknown>> extends HTMLAttributes<
   hoverable?: boolean;
   compact?: boolean;
   bordered?: boolean;
+  plain?: boolean;
   loading?: boolean;
   emptyText?: ReactNode;
   stickyHeader?: boolean;
@@ -41,6 +42,7 @@ export function Table<T extends Record<string, unknown>>({
   hoverable = true,
   compact = false,
   bordered = false,
+  plain = false,
   loading = false,
   emptyText = 'No data',
   stickyHeader = false,
@@ -76,6 +78,7 @@ export function Table<T extends Record<string, unknown>>({
     hoverable && 'av-table-hover',
     compact && 'av-table-compact',
     bordered && 'av-table-bordered',
+    plain && 'av-table-plain',
     stickyHeader && 'av-table-sticky',
     className,
   );
