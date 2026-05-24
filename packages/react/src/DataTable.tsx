@@ -44,6 +44,7 @@ export interface DataTableProps<T = Record<string, unknown>> extends HTMLAttribu
   hoverable?: boolean;
   bordered?: boolean;
   compact?: boolean;
+  plain?: boolean;
   stickyHeader?: boolean;
 }
 
@@ -73,6 +74,7 @@ export function DataTable<T extends Record<string, unknown>>({
   hoverable = true,
   bordered = false,
   compact = false,
+  plain = false,
   stickyHeader = false,
   className = '',
   ...props
@@ -242,6 +244,7 @@ export function DataTable<T extends Record<string, unknown>>({
             hoverable && 'av-table-hover',
             compact && 'av-table-compact',
             bordered && 'av-table-bordered',
+            plain && 'av-table-plain',
             stickyHeader && 'av-table-sticky',
             (onRowClick || expandedRowRender) && 'av-table-interactive',
           )}

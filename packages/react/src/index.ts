@@ -168,6 +168,9 @@ export type { ComboboxProps, ComboboxOption } from './Combobox';
 export { DataTable } from './DataTable';
 export type { DataTableProps, DataTableColumn } from './DataTable';
 
+export { DataGrid } from './DataGrid';
+export type { DataGridProps, DataGridColumn, DataGridCellType } from './DataGrid';
+
 export { List, ListItem, ListItemText, ListItemIcon, ListItemAction } from './List';
 export type { ListProps, ListItemProps, ListItemTextProps, ListItemIconProps, ListItemActionProps } from './List';
 
