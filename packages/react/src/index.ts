@@ -164,6 +164,9 @@ export type { FileUploadProps } from './FileUpload';
 export { Combobox } from './Combobox';
 export type { ComboboxProps, ComboboxOption } from './Combobox';
 
+export { Autocomplete } from './Autocomplete';
+export type { AutocompleteProps, AutocompleteOption } from './Autocomplete';
+
 // ── Data Display ─────────────────────────────────────────────────────────────
 export { DataTable } from './DataTable';
 export type { DataTableProps, DataTableColumn } from './DataTable';
