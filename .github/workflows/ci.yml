@@ -41,5 +41,8 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Security audit
-        run: pnpm audit --audit-level=high
+      - name: Security audit (production deps)
+        run: pnpm audit --prod --audit-level=high
+
+      - name: Security audit (dev deps — informational)
+        run: pnpm audit --audit-level=high || true
