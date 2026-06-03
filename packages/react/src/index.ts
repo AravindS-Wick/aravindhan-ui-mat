@@ -270,6 +270,8 @@ export type { UseDisclosureReturn } from './hooks';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { Masonry, MasonryItem } from './Masonry';
+export type { MasonryProps, MasonryItemProps } from './Masonry';
 export { Marquee } from './Marquee';
 export type { MarqueeProps } from './Marquee';
 export { Confetti } from './Confetti';
