@@ -269,3 +269,35 @@ export type { UseDisclosureReturn } from './hooks';
 // ── Shared types ─────────────────────────────────────────────────────────────
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
+
+export * from './Currency';
+
+export { GlassPanel } from './GlassPanel';
+export type { GlassPanelProps } from './GlassPanel';
+
+export { GlitchEffect } from './GlitchEffect';
+export type { GlitchEffectProps } from './GlitchEffect';
+
+export { HoverCard } from './HoverCard';
+export type { HoverCardProps } from './HoverCard';
+
+export { ActionSheet } from './ActionSheet';
+export type { ActionSheetProps } from './ActionSheet';
+
+export { AppShell, AppShellHeader, AppShellSidebar, AppShellMain, AppShellFooter } from './AppShell';
+export type { AppShellProps, AppShellHeaderProps, AppShellSidebarProps, AppShellMainProps, AppShellFooterProps } from './AppShell';
+
+export { Backdrop } from './Backdrop';
+export type { BackdropProps } from './Backdrop';
+
+export { BentoGrid, BentoGridItem } from './BentoGrid';
+export type { BentoGridItemProps } from './BentoGrid';
+
+export { BottomNavigation, BottomNavigationAction } from './BottomNavigation';
+export type { BottomNavigationProps, BottomNavigationActionProps } from './BottomNavigation';
+
+export { Carousel } from './Carousel';
+export type { CarouselProps } from './Carousel';
+
+export { CommandPalette, CommandPaletteInput, CommandPaletteBody, CommandPaletteGroup, CommandPaletteItem } from './CommandPalette';
+export type { CommandPaletteProps, CommandPaletteItemProps } from './CommandPalette';
