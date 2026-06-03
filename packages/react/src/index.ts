@@ -286,3 +286,6 @@ export type { ActionSheetProps } from './ActionSheet';
 
 export { AppShell, AppShellHeader, AppShellSidebar, AppShellMain, AppShellFooter } from './AppShell';
 export type { AppShellProps, AppShellHeaderProps, AppShellSidebarProps, AppShellMainProps, AppShellFooterProps } from './AppShell';
+
+export { Backdrop } from './Backdrop';
+export type { BackdropProps } from './Backdrop';
