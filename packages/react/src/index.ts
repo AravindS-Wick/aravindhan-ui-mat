@@ -281,6 +281,8 @@ export { GlitchEffect } from './GlitchEffect';
 export type { GlitchEffectProps } from './GlitchEffect';
 export { HoverCard } from './HoverCard';
 export type { HoverCardProps } from './HoverCard';
+export { MagneticButton } from './MagneticButton';
+export type { MagneticButtonProps } from './MagneticButton';
 export { ActionSheet } from './ActionSheet';
 export type { ActionSheetProps } from './ActionSheet';
 export { AppShell, AppShellHeader, AppShellSidebar, AppShellMain, AppShellFooter } from './AppShell';
