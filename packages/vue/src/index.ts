@@ -51,3 +51,5 @@ export { default as FormLabel } from './FormLabel.vue';
 export { default as FormProvider } from './FormProvider.vue';
 export { default as FormSelect } from './FormSelect.vue';
 export { default as FormTextarea } from './FormTextarea.vue';
+export { default as Checkbox } from './Checkbox.vue';
+export { default as ButtonGroup } from './ButtonGroup.vue';
