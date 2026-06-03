@@ -13,30 +13,55 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "public"],
+  "files": [
+    "dist",
+    "public"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist"
+    "lint": "eslint src --max-warnings=0",
+    "test": "vitest run --coverage",
+    "clean": "rm -rf dist coverage"
   },
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"
   },
   "peerDependenciesMeta": {
-    "react-dom": { "optional": false }
+    "react-dom": {
+      "optional": false
+    }
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/react": "^14.3.0",
+    "@testing-library/user-event": "^14.5.0",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "jsdom": "^25.0.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "tsup": "^8.0.0",
-    "typescript": "^5.4.0"
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0"
   },
-  "keywords": ["react", "ui", "components", "aravi1008", "design-system", "typescript"],
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "aravi1008",
+    "design-system",
+    "typescript"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/AravindS-Wick/aravindhan-ui",
   "repository": {
@@ -45,5 +70,9 @@
   },
   "bugs": {
     "url": "https://github.com/AravindS-Wick/aravindhan-ui/issues"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^12.40.0"
   }
 }

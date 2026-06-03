@@ -35,7 +35,7 @@ export function Pagination({
 }: PaginationProps) {
   const half = Math.floor(siblings / 2);
   let start = Math.max(1, page - half);
-  let end = Math.min(total, start + siblings - 1);
+  const end = Math.min(total, start + siblings - 1);
   if (end - start + 1 < siblings) start = Math.max(1, end - siblings + 1);
 
   const pages = range(start, end);
