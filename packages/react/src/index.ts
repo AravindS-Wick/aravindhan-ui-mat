@@ -269,3 +269,6 @@ export type { UseDisclosureReturn } from './hooks';
 // ── Shared types ─────────────────────────────────────────────────────────────
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
+
+export { SplitPane, SplitPanePane, SplitPaneResizer } from './SplitPane';
+export type { SplitPaneProps, SplitPanePaneProps, SplitPaneResizerProps } from './SplitPane';
