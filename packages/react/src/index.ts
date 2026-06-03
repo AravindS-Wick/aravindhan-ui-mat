@@ -298,3 +298,6 @@ export type { BottomNavigationProps, BottomNavigationActionProps } from './Botto
 
 export { Carousel } from './Carousel';
 export type { CarouselProps } from './Carousel';
+
+export { CommandPalette, CommandPaletteInput, CommandPaletteBody, CommandPaletteGroup, CommandPaletteItem } from './CommandPalette';
+export type { CommandPaletteProps, CommandPaletteItemProps } from './CommandPalette';
