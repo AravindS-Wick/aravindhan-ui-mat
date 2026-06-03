@@ -283,3 +283,6 @@ export type { HoverCardProps } from './HoverCard';
 
 export { ActionSheet } from './ActionSheet';
 export type { ActionSheetProps } from './ActionSheet';
+
+export { AppShell, AppShellHeader, AppShellSidebar, AppShellMain, AppShellFooter } from './AppShell';
+export type { AppShellProps, AppShellHeaderProps, AppShellSidebarProps, AppShellMainProps, AppShellFooterProps } from './AppShell';
