@@ -270,6 +270,8 @@ export type { UseDisclosureReturn } from './hooks';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { SplitPane, SplitPanePane, SplitPaneResizer } from './SplitPane';
+export type { SplitPaneProps, SplitPanePaneProps, SplitPaneResizerProps } from './SplitPane';
 export { SpeedDial, SpeedDialAction } from './SpeedDial';
 export type { SpeedDialProps, SpeedDialActionProps } from './SpeedDial';
 export { Sparkline } from './Sparkline';
