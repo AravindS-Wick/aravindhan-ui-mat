@@ -269,3 +269,5 @@ export type { UseDisclosureReturn } from './hooks';
 // ── Shared types ─────────────────────────────────────────────────────────────
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
+
+export * from './Currency';
