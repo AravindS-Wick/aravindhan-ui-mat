@@ -269,3 +269,6 @@ export type { UseDisclosureReturn } from './hooks';
 // ── Shared types ─────────────────────────────────────────────────────────────
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
+
+export { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from './NavigationMenu';
+export type { NavigationMenuProps, NavigationMenuListProps, NavigationMenuItemProps, NavigationMenuTriggerProps, NavigationMenuContentProps, NavigationMenuLinkProps } from './NavigationMenu';
