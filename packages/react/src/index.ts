@@ -280,3 +280,6 @@ export type { GlitchEffectProps } from './GlitchEffect';
 
 export { HoverCard } from './HoverCard';
 export type { HoverCardProps } from './HoverCard';
+
+export { ActionSheet } from './ActionSheet';
+export type { ActionSheetProps } from './ActionSheet';
