@@ -44,3 +44,14 @@ export { cls } from './types';
 
 export { default as InputGroup } from './InputGroup.vue';
 export { default as InputGroupText } from './InputGroupText.vue';
+export { default as Form } from './Form.vue';
+export { default as FormCheck } from './FormCheck.vue';
+export { default as FormField } from './FormField.vue';
+export { default as FormHelperText } from './FormHelperText.vue';
+export { default as FormInput } from './FormInput.vue';
+export { default as FormLabel } from './FormLabel.vue';
+export { default as FormProvider } from './FormProvider.vue';
+export { default as FormSelect } from './FormSelect.vue';
+export { default as FormTextarea } from './FormTextarea.vue';
+export { default as Checkbox } from './Checkbox.vue';
+export { default as ButtonGroup } from './ButtonGroup.vue';
