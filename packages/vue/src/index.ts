@@ -43,3 +43,4 @@ export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './typ
 export { cls } from './types';
 
 export { default as Checkbox } from './Checkbox.vue';
+export { default as ButtonGroup } from './ButtonGroup.vue';

@@ -1,32 +1,32 @@
 import type { HTMLAttributes } from 'react';
-import { cls, type ColorScheme, type Size } from './types';
+import { cls, type Size } from './types';
 
 export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
-  /** Color variant. Defaults to `'primary'`. */
-  variant?: ColorScheme;
+  /** The semantic color tint of the badge. Defaults to `'primary'`. */
+  color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info';
+  /** The visual appearance of the badge. Defaults to `'soft'`. */
+  appearance?: 'soft' | 'solid' | 'outline';
   /** Size modifier. Defaults to `'md'`. */
   size?: Size;
-  /** Renders the badge as a pill (fully rounded). */
-  pill?: boolean;
-  /** Renders the badge as an outlined style. */
-  outline?: boolean;
+  /** Shape of the badge. Defaults to `'pill'`. */
+  shape?: 'rounded' | 'pill';
 }
 
 export function Badge({
-  variant = 'primary',
+  color = 'primary',
+  appearance = 'soft',
   size = 'md',
-  pill = false,
-  outline = false,
+  shape = 'pill',
   className = '',
   children,
   ...props
 }: BadgeProps) {
   const computed = cls(
     'av-badge',
-    `av-badge-${variant}`,
-    size !== 'md' && `av-badge-${size}`,
-    pill && 'av-badge-pill',
-    outline && 'av-badge-outline',
+    `av-badge-appearance-${appearance}`,
+    `av-badge-color-${color}`,
+    `av-badge-size-${size}`,
+    `av-badge-shape-${shape}`,
     className,
   );
 
