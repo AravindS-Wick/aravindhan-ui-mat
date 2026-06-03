@@ -270,6 +270,8 @@ export type { UseDisclosureReturn } from './hooks';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { Marquee } from './Marquee';
+export type { MarqueeProps } from './Marquee';
 export { Confetti } from './Confetti';
 export type { ConfettiProps } from './Confetti';
 export { ContextMenu, ContextMenuItem, ContextMenuSeparator, ContextMenuLabel } from './ContextMenu';
