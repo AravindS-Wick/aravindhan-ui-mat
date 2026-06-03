@@ -2,7 +2,7 @@ import { forwardRef, useId, type InputHTMLAttributes, type ReactNode } from 'rea
 import { cls, type Size } from './types';
 import { useFieldProps } from './FormProvider';
 
-export interface TextFieldProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
+export interface TextFieldProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'color'> {
   label?: string;
   helperText?: string;
   /** Error message — also sets aria-invalid. */
@@ -12,6 +12,10 @@ export interface TextFieldProps extends Omit<InputHTMLAttributes<HTMLInputElemen
   endAdornment?: ReactNode;
   size?: Size;
   fullWidth?: boolean;
+  /** Visual style of the input. Defaults to 'outline'. */
+  appearance?: 'outline' | 'filled' | 'flushed';
+  /** Focus color tint. Defaults to 'primary'. */
+  color?: 'default' | 'primary' | 'success' | 'warning' | 'error' | 'info';
 }
 
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(function TextField(
@@ -26,6 +30,8 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(function T
     startAdornment,
     endAdornment,
     size = 'md',
+    appearance = 'outline',
+    color = 'default',
     fullWidth = false,
     required = false,
     className = '',
@@ -69,6 +75,8 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(function T
           id={inputId}
           className={cls(
             'av-input',
+            `av-input-appearance-${appearance}`,
+            color !== 'default' && `av-input-color-${color}`,
             size !== 'md' && `av-input-${size}`,
             hasError && 'av-input-error',
             success && 'av-input-success',
