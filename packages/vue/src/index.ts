@@ -41,3 +41,6 @@ export { default as ThemeToggle } from './ThemeToggle.vue';
 // ── Shared types ──────────────────────────────────────────────────────────────
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
+
+export { default as ToggleButton } from './ToggleButton.vue';
+export { default as ToggleButtonGroup } from './ToggleButtonGroup.vue';
