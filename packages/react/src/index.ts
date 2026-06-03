@@ -270,6 +270,8 @@ export type { UseDisclosureReturn } from './hooks';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { Sparkline } from './Sparkline';
+export type { SparklineProps } from './Sparkline';
 export { Ripple } from './Ripple';
 export type { RippleProps } from './Ripple';
 export { NeonText } from './NeonText';
