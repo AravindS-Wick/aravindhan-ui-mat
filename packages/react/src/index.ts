@@ -270,6 +270,8 @@ export type { UseDisclosureReturn } from './hooks';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { TiltCard } from './TiltCard';
+export type { TiltCardProps } from './TiltCard';
 export { Spotlight, SpotlightContent } from './Spotlight';
 export type { SpotlightProps, SpotlightContentProps } from './Spotlight';
 export { SplitPane, SplitPanePane, SplitPaneResizer } from './SplitPane';
