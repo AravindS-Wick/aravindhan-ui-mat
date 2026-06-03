@@ -271,3 +271,6 @@ export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './typ
 export { cls } from './types';
 
 export * from './Currency';
+
+export { GlassPanel } from './GlassPanel';
+export type { GlassPanelProps } from './GlassPanel';
