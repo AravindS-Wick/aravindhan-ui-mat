@@ -289,3 +289,6 @@ export type { AppShellProps, AppShellHeaderProps, AppShellSidebarProps, AppShell
 
 export { Backdrop } from './Backdrop';
 export type { BackdropProps } from './Backdrop';
+
+export { BentoGrid, BentoGridItem } from './BentoGrid';
+export type { BentoGridItemProps } from './BentoGrid';
