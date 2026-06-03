@@ -292,3 +292,6 @@ export type { BackdropProps } from './Backdrop';
 
 export { BentoGrid, BentoGridItem } from './BentoGrid';
 export type { BentoGridItemProps } from './BentoGrid';
+
+export { BottomNavigation, BottomNavigationAction } from './BottomNavigation';
+export type { BottomNavigationProps, BottomNavigationActionProps } from './BottomNavigation';
