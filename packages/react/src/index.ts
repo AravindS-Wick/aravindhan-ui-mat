@@ -277,3 +277,6 @@ export type { GlassPanelProps } from './GlassPanel';
 
 export { GlitchEffect } from './GlitchEffect';
 export type { GlitchEffectProps } from './GlitchEffect';
+
+export { HoverCard } from './HoverCard';
+export type { HoverCardProps } from './HoverCard';
