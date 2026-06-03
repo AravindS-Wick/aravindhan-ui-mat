@@ -280,3 +280,5 @@ export type { GlitchEffectProps } from './GlitchEffect';
 
 export { HoverCard } from './HoverCard';
 export type { HoverCardProps } from './HoverCard';
+export { MagneticButton } from './MagneticButton';
+export type { MagneticButtonProps } from './MagneticButton';
