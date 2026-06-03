@@ -9,14 +9,19 @@ describe('Button', () => {
     expect(screen.getByRole('button')).toHaveTextContent('Click me');
   });
 
-  it('applies primary variant class by default', () => {
+  it('applies default solid-primary class', () => {
     render(<Button>Test</Button>);
-    expect(screen.getByRole('button')).toHaveClass('av-btn', 'av-btn-primary');
+    expect(screen.getByRole('button')).toHaveClass('av-btn', 'av-btn-solid-primary');
   });
 
-  it('applies the given variant class', () => {
-    render(<Button variant="danger">Delete</Button>);
-    expect(screen.getByRole('button')).toHaveClass('av-btn-danger');
+  it('applies the given color class', () => {
+    render(<Button color="danger">Delete</Button>);
+    expect(screen.getByRole('button')).toHaveClass('av-btn-solid-danger');
+  });
+
+  it('applies the given appearance class', () => {
+    render(<Button appearance="outline">Outline</Button>);
+    expect(screen.getByRole('button')).toHaveClass('av-btn-outline-primary');
   });
 
   it('applies size class when not md', () => {
