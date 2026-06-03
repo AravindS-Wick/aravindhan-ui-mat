@@ -41,3 +41,6 @@ export { default as ThemeToggle } from './ThemeToggle.vue';
 // ── Shared types ──────────────────────────────────────────────────────────────
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
+
+export { default as Radio } from './Radio.vue';
+export { default as RadioGroup } from './RadioGroup.vue';
