@@ -10,11 +10,11 @@ describe('Alert', () => {
 
   it('applies info color class by default', () => {
     render(<Alert>Info</Alert>);
-    expect(screen.getByRole('alert')).toHaveClass('av-alert', 'av-alert-info');
+    expect(screen.getByRole('alert')).toHaveClass('av-alert', 'av-alert-color-info');
   });
 
-  it('applies the given variant class', () => {
-    render(<Alert variant="success">Done</Alert>);
-    expect(screen.getByRole('alert')).toHaveClass('av-alert-success');
+  it('applies the given color class', () => {
+    render(<Alert color="success">Done</Alert>);
+    expect(screen.getByRole('alert')).toHaveClass('av-alert-color-success');
   });
 });
