@@ -63,8 +63,8 @@ const onRadioChange = (val: string) => {
         :color="color"
         :size="size"
         :error="!!error"
-        :modelValue="modelValue"
-        @update:modelValue="onRadioChange"
+        :model-value="modelValue"
+        @update:model-value="onRadioChange"
       />
       <p v-if="opt.helperText" class="av-radio-helper">{{ opt.helperText }}</p>
     </div>
