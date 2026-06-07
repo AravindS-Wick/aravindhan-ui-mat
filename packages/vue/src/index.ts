@@ -61,6 +61,8 @@ export { default as ThemeToggle } from './ThemeToggle.vue';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { default as ToggleButton } from './ToggleButton.vue';
+export { default as ToggleButtonGroup } from './ToggleButtonGroup.vue';
 export { default as Textarea } from './Textarea.vue';
 export { default as Slider } from './Slider.vue';
 export { default as Select } from './Select.vue';
