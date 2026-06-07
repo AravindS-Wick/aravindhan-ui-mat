@@ -98,7 +98,7 @@ export const NavigationMenuContent = React.forwardRef<HTMLDivElement, Navigation
 NavigationMenuContent.displayName = 'NavigationMenuContent';
 
 export interface NavigationMenuLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   title?: string;
   description?: string;
 }
