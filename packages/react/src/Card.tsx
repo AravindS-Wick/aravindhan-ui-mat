@@ -10,8 +10,10 @@ export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   flush?: boolean;
   /** Adds a hover shadow effect. */
   hoverable?: boolean;
-  /** Renders the card with a bordered style instead of shadow. */
-  bordered?: boolean;
+  /** The appearance style of the card. */
+  appearance?: 'outline' | 'elevated' | 'filled';
+  /** The semantic color tint of the card. */
+  color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info';
 }
 
 export interface CardHeaderProps extends HTMLAttributes<HTMLDivElement> {}
@@ -35,24 +37,32 @@ export function Card({
   footer,
   flush = false,
   hoverable = false,
-  bordered = false,
+  appearance = 'outline',
+  color = 'default',
   className = '',
   children,
   ...props
 }: CardProps) {
   const computed = cls(
     'av-card',
+    `av-card-appearance-${appearance}`,
+    color !== 'default' && `av-card-color-${color}`,
     flush && 'av-card-flush',
     hoverable && 'av-card-hoverable',
-    bordered && 'av-card-bordered',
     className,
   );
 
   return (
     <div className={computed} {...props}>
-      {header && <CardHeader>{header}</CardHeader>}
-      <CardBody>{children}</CardBody>
-      {footer && <CardFooter>{footer}</CardFooter>}
+      {header && (
+        typeof header === 'string' || typeof header === 'number' ? 
+          <CardHeader>{header}</CardHeader> : header
+      )}
+      {children}
+      {footer && (
+        typeof footer === 'string' || typeof footer === 'number' ? 
+          <CardFooter>{footer}</CardFooter> : footer
+      )}
     </div>
   );
 }
