@@ -61,6 +61,7 @@ export { default as ThemeToggle } from './ThemeToggle.vue';
 export type { Variant, Size, ColorScheme, Placement, ToastPosition } from './types';
 export { cls } from './types';
 
+export { default as Select } from './Select.vue';
 export { default as SearchInput } from './SearchInput.vue';
 export { default as Rating } from './Rating.vue';
 export { default as Radio } from './Radio.vue';
