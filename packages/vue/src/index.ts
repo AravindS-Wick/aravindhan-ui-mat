@@ -28,6 +28,25 @@ export { default as TimelineItem } from './TimelineItem.vue';
 export { default as Toast } from './Toast.vue';
 export { default as Tooltip } from './Tooltip.vue';
 
+// ── Layout ────────────────────────────────────────────────────────────────────
+export { default as Box } from './Box.vue';
+export { default as Container } from './Container.vue';
+export { default as Grid } from './Grid.vue';
+export { default as GridItem } from './GridItem.vue';
+export { default as Stack } from './Stack.vue';
+export { default as Divider } from './Divider.vue';
+export { default as Section } from './Section.vue';
+export { default as AppShell } from './AppShell.vue';
+export { default as AppShellHeader } from './AppShellHeader.vue';
+export { default as AppShellSidebar } from './AppShellSidebar.vue';
+export { default as AppShellMain } from './AppShellMain.vue';
+export { default as AppShellFooter } from './AppShellFooter.vue';
+export { default as SplitPane } from './SplitPane.vue';
+export { default as SplitPanePane } from './SplitPanePane.vue';
+export { default as SplitPaneResizer } from './SplitPaneResizer.vue';
+export { default as Masonry } from './Masonry.vue';
+export { default as MasonryItem } from './MasonryItem.vue';
+
 // ── Inputs ────────────────────────────────────────────────────────────────────
 export { default as TextField } from './TextField.vue';
 
