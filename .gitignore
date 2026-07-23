@@ -46,3 +46,9 @@ pnpm-debug.log*
 coverage/
 .nyc_output/
 node_modules
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+playwright-report.zip
